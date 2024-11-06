@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Intake for Date Range</title>
+    <link rel="stylesheet" href="seePreviousData.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="home-page-btn">HomePage</button>
+        <h2>Hi, you can see your previous Food data here</h2>
+        <h2>Select Date Range</h2>
+
+        <label for="start-date">Start Date: </label>
+        <input type="date" id="start-date" name="start-date">
+
+        <label for="end-date">End Date: </label>
+        <input type="date" id="end-date" name="end-date">
+
+        <button id="select-dates">OK</button>
+
+        <h3>Food Intake from Selected Date Range:</h3>
+
+        <table id="food-intake-table">
+            <thead>
+                <tr>
+                    <th>Food</th>
+                    <th>Protein</th>
+                    <th>Fats</th>
+                    <th>Calories</th>
+                    <th>Fiber</th>
+                    <th>Carbs</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+
+        <!-- Placeholder for no data message -->
+        <div id="no-data" class="no-data" style="display: none;">No data available for the selected date range.</div>
+    </div>
+
+    <script src="viewDateRange.js"></script>
+</body>
+
+</html>

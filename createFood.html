@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food - Calorie Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="home-page-btn">HomePage</button>
+    <h1>Add Custom Food</h1>
+
+    <!-- Form to add custom food -->
+    <form id="add-food-form">
+        <input type="text" id="food-name" placeholder="Food Name" required>
+        <input type="number" id="food-protein" placeholder="Protein (g)">
+        <input type="number" id="food-fats" placeholder="Fats (g)">
+        <input type="number" id="food-calories" placeholder="Calories (kcal)">
+        <input type="number" id="food-fiber" placeholder="Fiber (g)">
+        <input type="number" id="food-carbs" placeholder="Carbs (g)">
+        <input type="text" id="food-quantity" placeholder="Quantity (g)" required>
+        <button type="submit">Add Food</button>
+    </form>
+
+    <h2>Food List</h2>
+    <!-- Table to display existing food -->
+    <table id="food-table">
+        <thead>
+            <tr>
+                <th>Food Name</th>
+                <th>Protein (g)</th>
+                <th>Fats (g)</th>
+                <th>Calories (kcal)</th>
+                <th>Fiber (g)</th>
+                <th>Carbs (g)</th>
+                <th>Quantity (g)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="food-list">
+            <!-- Food items will be populated here -->
+        </tbody>
+    </table>
+
+    <script src="createFood.js"></script>
+</body>
+
+</html>
