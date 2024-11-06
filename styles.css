@@ -83,3 +83,61 @@ button {
 button:hover {
     background-color: #ff5733;
 }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1,
+    h2 {
+        font-size: 18px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    form input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    form button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    table {
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Make tables scrollable on smaller screens */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table th,
+    table td {
+        display: inline-block;
+        text-align: left;
+    }
+}
